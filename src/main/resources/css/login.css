@@ -1,0 +1,9 @@
+#loginButton {
+    -fx-background-color: #6ab4e1;
+    -fx-text-fill: #fff4f4;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+}
+#errorLabel {
+    -fx-text-fill: #ec2222;
+}

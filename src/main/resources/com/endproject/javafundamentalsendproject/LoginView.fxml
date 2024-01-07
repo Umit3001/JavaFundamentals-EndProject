@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="LoginScreen" prefHeight="240.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.endproject.javafundamentalsendproject.Controller.LoginController">
+   <children>
+      <GridPane prefHeight="242.0" prefWidth="322.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" maxWidth="164.0" minWidth="10.0" prefWidth="98.79999237060548" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.6" minWidth="10.0" prefWidth="203.2000076293945" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="70.99999618530273" minHeight="10.0" prefHeight="70.99999618530273" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="73.4" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.4" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.4" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.4" minHeight="10.0" prefHeight="77.4" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Login">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label text="Username" GridPane.rowIndex="1" />
+            <Label text="Password" GridPane.rowIndex="2" />
+            <TextField fx:id="usernameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="passwordTextField" prefHeight="26.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="40.0" prefWidth="63.0" text="Login" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            </Button>
+            <Label fx:id="errorLabel" prefHeight="18.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
