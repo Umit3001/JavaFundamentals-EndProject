@@ -3,5 +3,6 @@ sales:
 Username: Umit
 Password: 1234
 
-manger: Hans
+manger:
+Username: Hans
 Password: 1234
