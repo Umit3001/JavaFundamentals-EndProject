@@ -1,0 +1,8 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š€£Ğ8ŒØÁœÏ1
+
+java:S1450!"_Remove the "productInventory" field and declare it as a local variable in the relevant methods.(âœŞ‘ûÿÿÿÿ8ÃØÁœÏ1
+{
+java:S1450"^Remove the "selectedProduct" field and declare it as a local variable in the relevant methods.(ñÀèß8ÃØÁœÏ1
+
+java:S1450 "_Remove the "selectedQuantity" field and declare it as a local variable in the relevant methods.(Ë«ìáùÿÿÿÿ8ÄØÁœÏ1

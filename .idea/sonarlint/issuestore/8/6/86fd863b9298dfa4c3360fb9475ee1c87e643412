@@ -1,0 +1,13 @@
+
+b	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(—è›š8ğÙĞŸÏ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š€£Ğ8òÙĞŸÏ1
+„
+java:S1450"bRemove the "dashboardController" field and declare it as a local variable in the relevant methods.(“ÊÊùÿÿÿÿ8ÚĞŸÏ1
+T
+java:S1172?"2Remove this unused method parameter "actionEvent".(»æû‚üÿÿÿÿ8›ÚĞŸÏ1
+O
+java:S1172C"2Remove this unused method parameter "actionEvent".(Éÿæ•8œÚĞŸÏ1
+O
+java:S1172I"2Remove this unused method parameter "actionEvent".(ÔñæÙ8ÚĞŸÏ1
+T
+java:S1172O"2Remove this unused method parameter "actionEvent".(ÀèÙ•úÿÿÿÿ8ŸÚĞŸÏ1

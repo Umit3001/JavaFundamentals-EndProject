@@ -29,7 +29,7 @@
             <Label text="Password" GridPane.rowIndex="2" />
             <TextField fx:id="usernameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <PasswordField fx:id="passwordTextField" prefHeight="26.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="40.0" prefWidth="63.0" text="Login" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="40.0" prefWidth="80.0" text="Login" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.rowIndex="4">
             </Button>
             <Label fx:id="errorLabel" prefHeight="18.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>

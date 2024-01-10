@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
@@ -16,6 +17,10 @@ import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
 
+    @FXML
+    public Button createOrderButton;
+    @FXML
+    public Button productInventoryButton;
     @FXML
     private VBox pageVBox;
     @FXML
@@ -31,6 +36,9 @@ public class MainController implements Initializable {
 
         dashboardController = fxmlLoader.getController();
         dashboardController.initUser(loggedInUser);
+
+        createOrderButton.setVisible(loggedInUser.getCompanyRoll() == CompanyRole.sales);
+        productInventoryButton.setVisible(loggedInUser.getCompanyRoll() == CompanyRole.manager);
 
     }
 

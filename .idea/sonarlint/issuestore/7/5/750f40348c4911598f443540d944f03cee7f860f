@@ -1,0 +1,12 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š€£Ğ8‡§âÏ1
+N
+java:S1602-",Remove useless curly braces around statement(œ¢œ¹ûÿÿÿÿ8³§âÏ1
+T
+java:S11723"2Remove this unused method parameter "actionEvent".(“–Ÿ•ÿÿÿÿÿ8´§âÏ1
+O
+java:S1172K"2Remove this unused method parameter "actionEvent".(ïñÏ¨8·§âÏ1
+O
+java:S1172w"2Remove this unused method parameter "actionEvent".(ğˆ‡ÿ8»§âÏ1
+L
+java:S1905x"*Remove this unnecessary cast to "Product".(ôÕáäşÿÿÿÿ8¼§âÏ1

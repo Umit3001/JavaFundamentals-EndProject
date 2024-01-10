@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 
@@ -60,11 +61,18 @@ public class LoginController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Umit's Music Dungeon");
+        stage.setOnCloseRequest(this::onCloseRequest);
         stage.show();
 
         //close current stage
         Stage currentStage = (Stage) loginButton.getScene().getWindow();
         currentStage.close();
+    }
+
+    private void onCloseRequest(WindowEvent event) {
+
+        databaseUsers.saveToFile();
+
     }
 
     private User getUser() {

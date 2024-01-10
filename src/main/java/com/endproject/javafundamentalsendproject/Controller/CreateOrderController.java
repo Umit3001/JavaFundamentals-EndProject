@@ -143,6 +143,7 @@ public class CreateOrderController implements Initializable {
 
                     database.getOrders().add(order);
                     clearFields();
+                    database.saveToFile();
                 }
             } catch (Exception e) {
                 exceptionLabel.setText("Please fill in all fields");

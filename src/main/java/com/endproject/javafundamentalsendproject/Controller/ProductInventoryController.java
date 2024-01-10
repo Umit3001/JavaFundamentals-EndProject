@@ -64,6 +64,7 @@ public class ProductInventoryController implements Initializable {
                     products.add(newProduct);
                     productInventoryTableView.refresh();
                     exceptionLabel.setText("");
+                    database.saveToFile();
                 }
             }
         } catch (NumberFormatException e) {
@@ -92,6 +93,7 @@ public class ProductInventoryController implements Initializable {
                         productInventoryTableView.refresh();
 
                         exceptionLabel.setText("");
+                        database.saveToFile();
                     }
                 }
             } catch (NumberFormatException e) {
@@ -121,7 +123,8 @@ public class ProductInventoryController implements Initializable {
                 products.remove(selectedItem);
                 database.deleteProduct(selectedItem);
                 productInventoryTableView.refresh();
-                exceptionLabel.setText("");  // Clear any previous error messages
+                exceptionLabel.setText("");
+                database.saveToFile();
             } catch (Exception e) {
                 exceptionLabel.setText("An error occurred while deleting the product.");
             }

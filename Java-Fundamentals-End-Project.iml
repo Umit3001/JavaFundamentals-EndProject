@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
-  <component name="AdditionalModuleElements">
-    <content url="file://$MODULE_DIR$" dumb="true">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-    </content>
-  </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="5ec5e776-ace1-4184-a8d3-e4ca34adbcc1" />
+    <option name="uniqueId" value="5423c1eb-782d-46c5-83c8-12a589179921" />
   </component>
 </module>
