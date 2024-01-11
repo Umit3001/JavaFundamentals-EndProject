@@ -61,18 +61,11 @@ public class LoginController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Umit's Music Dungeon");
-        stage.setOnCloseRequest(this::onCloseRequest);
         stage.show();
 
         //close current stage
         Stage currentStage = (Stage) loginButton.getScene().getWindow();
         currentStage.close();
-    }
-
-    private void onCloseRequest(WindowEvent event) {
-
-        databaseUsers.saveToFile();
-
     }
 
     private User getUser() {

@@ -22,10 +22,9 @@ public class Database {
 
     public Database() {
         if (FILE_PATH.exists()) {
-            loadStandardData();
-            System.out.println("Loaded standard data");
+           loadFromFile();
         } else {
-            loadFromFile();
+            loadStandardData();
         }
     }
 
@@ -115,8 +114,8 @@ public class Database {
         } catch (IOException e) {
             try {
                 Files.delete(FILE_PATH.toPath());
-            } catch (IOException ignored) {
-            } finally {
+            } catch (IOException e1) {
+                e.printStackTrace();
                 loadStandardData();
             }
         } catch (ClassNotFoundException | UnknownObjectException e) {
